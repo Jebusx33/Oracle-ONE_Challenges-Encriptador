@@ -1,0 +1,65 @@
+var texto = document.getElementById("txtEncrypt");
+var textoIn = texto.value.toLowerCase();
+
+//funcion ocultar rectangulo 1 y mostrar el rectangulo 2
+function rectangulo() {
+    rectangle1.style.display = "none";
+    rectangle2.style.display = "inline";
+}
+function ocultarInput() {
+    txtEncrypt.style.display = "none";
+    txtDecrypt.style.display = "inline";
+}
+//funcion encriptar
+function encriptarTexto() {
+    var nuevoTexto = textoIn.replace(/e/igm, 'enter');
+    var nuevoTexto = nuevoTexto.replace(/i/igm, 'imes');
+    var nuevoTexto = nuevoTexto.replace(/a/igm, 'ai');
+    var nuevoTexto = nuevoTexto.replace(/o/igm, 'ober');
+    var nuevoTexto = nuevoTexto.replace(/u/igm, 'ufat');
+    document.getElementById("areaEncrypt").innerHTML = nuevoTexto;
+}
+
+//funcion desencriptar
+function desencriptarTexto() {
+    var nuevoTexto = textoIn.replace(/enter/igm, 'e');
+    var nuevoTexto = nuevoTexto.replace(/imes/igm, 'i');
+    var nuevoTexto = nuevoTexto.replace(/ai/igm, 'a');
+    var nuevoTexto = nuevoTexto.replace(/ober/igm, 'o');
+    var nuevoTexto = nuevoTexto.replace(/ufat/igm, 'u');
+    document.getElementById("areaEncrypt").innerHTML = nuevoTexto;
+}
+
+//Funcion Copiar
+function copy() {
+    let copyText = document.querySelector("#areaEncrypt");
+    copyText.select();
+    document.execCommand("copy");
+    document.getElementById("txtEncrypt").value = "";
+  }
+  var rectangle1 = document.querySelector("#rectangle1");
+  var rectangle2 = document.querySelector("#rectangle2");
+  var txtEncrypt = document.querySelector("#txtEncrypt");
+  var txtDecrypt = document.querySelector("#txtDecrypt");
+  var btnEncrypt= document.querySelector(".btnEncrypt");
+  var btnDecrypt= document.querySelector(".btnDecrypt");
+  var btnCopy= document.querySelector(".btnCopy");
+  
+
+//Botones
+btnEncrypt.addEventListener('click', function () {
+    rectangulo();
+    encriptarTexto();
+    ocultarInput(); 
+ });
+
+ btnDecrypt.addEventListener('click', function () {
+    rectangulo();
+    desencriptarTexto();
+   
+ });
+
+ btnCopy.addEventListener('click', function () {
+      copy();
+      ocultarInput(); 
+ });
