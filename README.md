@@ -38,5 +38,20 @@ Tenemos un periodo de tiempo de cuatro semanas para desarrollar el proyecto y va
 El Trello es una herramienta de uso individual para que puedas controlar el progreso de tus actividades, pero no será evaluada.
 
  Buen proyecto!
- 
+<h4> Desktop</h4>
+<p dir="auto">
  <img width="100" src="https://i.imgur.com/iGdOK7R.png" style="max-width: 100%;">
+ <img width="100" src="https://i.imgur.com/upVva9e.png" style="max-width: 100%;">
+ <p>
+  
+<h4> Tablet</h4>
+<p dir="auto">
+ <img width="100" src="https://i.imgur.com/GsjZEou.png" style="max-width: 100%;">
+ <img width="100" src="https://i.imgur.com/Z804se5.png" style="max-width: 100%;">
+ <p>
+  
+  <h4> Celular</h4>
+<p dir="auto">
+ <img width="100" src="https://i.imgur.com/az6659n.png" style="max-width: 100%;">
+ <img width="100" src="https://i.imgur.com/usRU9YP.png" style="max-width: 100%;">
+ <p>
