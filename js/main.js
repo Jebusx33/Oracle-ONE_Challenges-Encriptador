@@ -1,15 +1,18 @@
-var texto = document.getElementById("txtEncrypt");
+var texto = document.getElementById("txtEncryptDecrypt");
 var textoIn = texto.value.toLowerCase();
+var rectangle1 = document.querySelector("#rectangle1");
+var rectangle2 = document.querySelector("#rectangle2");
+var txtEncrypt = document.querySelector("#txtEncryptDecrypt");
+var btnEncrypt= document.querySelector(".btnEncrypt");
+var btnDecrypt= document.querySelector(".btnDecrypt");
+var btnCopy= document.querySelector(".btnCopy");
 
 //funcion ocultar rectangulo 1 y mostrar el rectangulo 2
 function rectangulo() {
     rectangle1.style.display = "none";
     rectangle2.style.display = "inline";
 }
-function ocultarInput() {
-    txtEncrypt.style.display = "none";
-    txtDecrypt.style.display = "inline";
-}
+
 //funcion encriptar
 function encriptarTexto() {
     var nuevoTexto = textoIn.replace(/e/igm, 'enter');
@@ -34,32 +37,21 @@ function desencriptarTexto() {
 function copy() {
     let copyText = document.querySelector("#areaEncrypt");
     copyText.select();
-    document.execCommand("copy");
-    document.getElementById("txtEncrypt").value = "";
+document.getElementById("txtEncryptDecrypt").value = "";
   }
-  var rectangle1 = document.querySelector("#rectangle1");
-  var rectangle2 = document.querySelector("#rectangle2");
-  var txtEncrypt = document.querySelector("#txtEncrypt");
-  var txtDecrypt = document.querySelector("#txtDecrypt");
-  var btnEncrypt= document.querySelector(".btnEncrypt");
-  var btnDecrypt= document.querySelector(".btnDecrypt");
-  var btnCopy= document.querySelector(".btnCopy");
-  
+
 
 //Botones
 btnEncrypt.addEventListener('click', function () {
     rectangulo();
     encriptarTexto();
-    ocultarInput(); 
  });
 
  btnDecrypt.addEventListener('click', function () {
     rectangulo();
     desencriptarTexto();
-   
  });
 
  btnCopy.addEventListener('click', function () {
       copy();
-      ocultarInput(); 
  });

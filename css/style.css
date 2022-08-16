@@ -19,7 +19,7 @@ section {
 h1 {
     padding: 40px 0 0 84px;
 }
-
+/*
 .txtEncrypt {
     position: absolute;
     min-width: 577px;
@@ -48,10 +48,10 @@ h1 {
     border: none;
     outline: none;
 }
-
+*/
 .txtDecrypt {
-    display: none;
     position: absolute;
+    padding-right: 1%;
     width: 50%;
     height: 600px;
     left: 240px;
@@ -65,17 +65,19 @@ h1 {
     /*border: none;*/
     resize: none;
 }
+/*
 .txtDecrypt:focus {
     border: none;
     outline: none;
 }
+
 .txtDecrypt::placeholder {
     color: #0A3871;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-}
+}*/
 
 .menssage {
     position: absolute;
@@ -187,6 +189,10 @@ button {
 
 textarea {
     border: none;
+}
+textarea:focus {
+    border: none;
+    outline: none;
 }
 
 .rectangle {
