@@ -19,6 +19,7 @@ section {
 h1 {
     padding: 40px 0 0 84px;
 }
+
 /*
 .txtEncrypt {
     position: absolute;
@@ -65,7 +66,8 @@ h1 {
     /*border: none;*/
     resize: none;
 }
-/*
+
+
 .txtDecrypt:focus {
     border: none;
     outline: none;
@@ -77,7 +79,7 @@ h1 {
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-}*/
+}
 
 .menssage {
     position: absolute;
@@ -190,6 +192,7 @@ button {
 textarea {
     border: none;
 }
+
 textarea:focus {
     border: none;
     outline: none;
@@ -566,7 +569,7 @@ footer p {
     }
 
     footer p {
-       margin-left: 20%;
+        margin-left: 20%;
     }
 }
 
@@ -594,7 +597,7 @@ footer p {
         left: 6%;
     }
 
-    footer p{
+    footer p {
         margin-left: 15%;
     }
 }
@@ -623,7 +626,7 @@ footer p {
         left: 1.5%;
     }
 
-    footer p{
+    footer p {
         margin-left: 15%;
     }
 }
@@ -672,13 +675,16 @@ footer p {
     #rectangle1 p {
         top: 150px;
     }
-    #rectangle2{
-        left: 3%; 
+
+    #rectangle2 {
+        left: 3%;
     }
- footer{
-    top: 1550px;
- }
-    footer p{
+
+    footer {
+        top: 1550px;
+    }
+
+    footer p {
         margin-left: 15%;
     }
 
@@ -716,15 +722,18 @@ footer p {
     #rectangle1 p {
         top: 150px;
     }
-    #rectangle2{
-        left: 1%; 
+
+    #rectangle2 {
+        left: 1%;
         width: 580px;
     }
-    #rectangle2 textarea{
-        left: 4%; 
-       
+
+    #rectangle2 textarea {
+        left: 4%;
+
     }
-    footer p{
+
+    footer p {
         margin-left: 15%;
     }
 }
@@ -750,15 +759,18 @@ footer p {
     .rectangle {
         left: 16%;
     }
-    #rectangle2{
-        left: 1%; 
+
+    #rectangle2 {
+        left: 1%;
         width: 560px;
     }
-    #rectangle2 textarea{
-        left: 2%; 
-       
+
+    #rectangle2 textarea {
+        left: 2%;
+
     }
-    footer p{
+
+    footer p {
         margin-left: 15%;
     }
 }
@@ -784,19 +796,23 @@ footer p {
     .rectangle {
         left: 11%;
     }
-    #rectangle2{
-        left: 1%; 
+
+    #rectangle2 {
+        left: 1%;
         width: 480px;
     }
-    #rectangle2 textarea{
-        left: 6%; 
-       width: 480px;
+
+    #rectangle2 textarea {
+        left: 6%;
+        width: 480px;
     }
+
     .btnCopy {
         top: 310px;
         left: 113px;
-      }
-      footer p{
+    }
+
+    footer p {
         margin-left: 10%;
     }
 }
@@ -823,21 +839,25 @@ footer p {
     .rectangle {
         left: 3%;
     }
-    #rectangle2{
-        left: 2%; 
+
+    #rectangle2 {
+        left: 2%;
         width: 430px;
     }
-    #rectangle2 textarea{
-        left: 6%; 
-       width: 420px;
+
+    #rectangle2 textarea {
+        left: 6%;
+        width: 420px;
     }
+
     .btnCopy {
-       left: 100px;
-      }
-    footer p{
+        left: 100px;
+    }
+
+    footer p {
         margin-left: 5%;
     }
-  
+
 }
 
 @media screen and (max-width:480px) {
@@ -867,18 +887,21 @@ footer p {
         margin-left: 7%;
     }
 
-    #rectangle2{ 
+    #rectangle2 {
         left: -8%;
         width: 320px;
     }
-    #rectangle2 textarea{
-      
+
+    #rectangle2 textarea {
+
         width: 310px;
     }
+
     .btnCopy {
-       left: 10%;
-      }
-    footer p{
+        left: 10%;
+    }
+
+    footer p {
         margin-left: -15%;
     }
 }
@@ -895,10 +918,12 @@ footer p {
     .txtDecrypt {
         left: 5px;
     }
-    #rectangle2 textarea{
-        left: 9%;  
+
+    #rectangle2 textarea {
+        left: 9%;
     }
-     .btnCopy {
-       left: 7%;
-      }
+
+    .btnCopy {
+        left: 7%;
+    }
 }
