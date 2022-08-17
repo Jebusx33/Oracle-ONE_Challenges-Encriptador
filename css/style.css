@@ -20,37 +20,7 @@ h1 {
     padding: 40px 0 0 84px;
 }
 
-/*
-.txtEncrypt {
-    position: absolute;
-    min-width: 577px;
-    min-height: 48px;
-    left: 240px;
-    top: 168px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    color: #0A3871;
-    background: #F3F5FC;
-    border: none;
-
-}
-
-.txtEncrypt::placeholder {
-    color: #0A3871;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-}
-
-.txtEncrypt:focus {
-    border: none;
-    outline: none;
-}
-*/
-.txtDecrypt {
+.txtEncryptDecrypt {
     position: absolute;
     padding-right: 1%;
     width: 50%;
@@ -68,12 +38,12 @@ h1 {
 }
 
 
-.txtDecrypt:focus {
+.txtEncryptDecrypt:focus {
     border: none;
     outline: none;
 }
 
-.txtDecrypt::placeholder {
+.txtEncryptDecrypt::placeholder {
     color: #0A3871;
     font-style: normal;
     font-weight: 400;
@@ -339,9 +309,7 @@ footer p {
     body {
         overflow-x: hidden;
     }
-
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         left: 200px;
     }
 
@@ -373,8 +341,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+      .txtEncryptDecrypt {
         left: 100px;
     }
 
@@ -402,8 +369,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         left: 100px;
     }
 
@@ -443,15 +409,7 @@ footer p {
         bottom: 89.8%;
     }
 
-    .txtEncrypt {
-        position: absolute;
-        width: 688px;
-        height: 48px;
-        left: 20%;
-        top: 240px;
-    }
-
-    .txtDecrypt {
+     .txtEncryptDecrypt {
         left: 20%;
     }
 
@@ -536,7 +494,9 @@ footer p {
         margin: 0 auto;
         max-height: 750px;
     }
-
+    h1{
+        width: 100%;
+      }
     body {
         overflow-x: hidden;
     }
@@ -554,8 +514,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         max-width: 600px;
     }
 
@@ -582,8 +541,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         max-width: 600px;
         left: 10%;
     }
@@ -612,8 +570,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         left: 0.5%;
     }
 
@@ -646,8 +603,7 @@ footer p {
         padding: 40px 0 0 16px;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         width: 443px;
         left: 4%;
     }
@@ -695,8 +651,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         min-width: 550px;
         left: 3%;
     }
@@ -745,7 +700,7 @@ footer p {
     }
 
     .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         min-width: 450px;
         top: 30%;
         left: 13%;
@@ -782,7 +737,7 @@ footer p {
     }
 
     .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         min-width: 450px;
         top: 30%;
         left: 6%;
@@ -824,8 +779,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         min-width: 350px;
         top: 30%;
         left: 6%;
@@ -868,8 +822,7 @@ footer p {
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
         width: 200px;
         top: 30%;
         left: 1px;
@@ -906,16 +859,62 @@ footer p {
     }
 }
 
-@media screen and (max-width:375px) {
+
+@media screen and (max-width:420px) {
 
     body {
-        width: 375px;
+        max-width: 375px;
         margin: 0 auto;
         overflow-x: hidden;
     }
 
-    .txtEncrypt,
-    .txtDecrypt {
+    .txtEncryptDecrypt {
+        width: 200px;
+        top: 30%;
+        left: 5%;
+    }
+
+    .menssage,
+    .buttons {
+        margin-left: 20%;
+        left: 0;
+    }
+
+    .rectangle {
+        left: 0%;
+        width: 250px;
+        margin-left: 20%;
+    }
+
+    #rectangle2 {
+        left: -8%;
+        width: 320px;
+    }
+
+    #rectangle2 textarea {
+
+        width: 310px;
+    }
+
+    .btnCopy {
+        left: 10%;
+    }
+
+    footer p {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width:375px) {
+*{
+    overflow-x: hidden;
+}
+    body {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .txtEncryptDecrypt {
         left: 5px;
     }
 
